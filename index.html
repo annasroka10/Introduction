@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8">
+  <title>Background Color Example</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* Light blue */
+    }
+  </style>
+  </head>
+  <body>
+    <nav id="top-panel">
+      <div class="content"></div>
+      <div class="logo">Anna Sroka</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internships">Work Experience</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <p style="margin-top: 1000px;"></p>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anna Sroka</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#internships" onclick="toggleMenu()">Work Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1>Anna Sroka</h1>
+        <div class="btn-container">
+        <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume Anna Sroka.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anna-sroka-38425a38/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub Profile"
+            class="icon"
+            onclick="location.href='https://github.com/annasroka10'"
+          />
+        </div>
+      </div>
+      <div class="section__pic-container">
+        <img
+          class="profile-pic"
+          src="./assets/cartoon pic of me.jpg"
+          />
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know Me</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/my pic.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.E. Mathematics with Computer Science (2004)<br/>
+                M.S. Mathematics (2006)<br />
+                Data Analytics (2025)
+              </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/hobbies.png" alt="Hobbies Icon" class="icon" />
+              <h3>Hobbies</h3>
+              <p>Hiking and anything outdoors<br />Gardening<br />Travelling</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Hello, hello! Welcome to my website!
+              I'm Anna Sroka, Mathematics and Data Analytics graduate. Recently obssesed with data and anything new related to data. 
+              I'm a highly capable accountant with a strong background in general accounting and financial matters. I am eager to transition into a career in business intelligence 
+              or data analytics, combining my financial expertise with analytical skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets//arrow.png"
+        alt="Sroll Down"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      /> -->
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container-1">
+            <h2 class="skills-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>SQL</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>R</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Python</h3>
+              </article>
+            </div>
+          </div>
+          <div class="details-container-1">
+            <h2 class="skills-sub-title">Data Visualization</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Tableau</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Power BI</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Seaborn</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Matplotlib</h3>
+              </article>
+            </div>
+          </div>
+          <div class="details-container-1">
+            <h2 class="skills-sub-title">Financial Systems and Other</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Advanced Excel</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>SAP</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Netsuite</h3>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="*" class="icon" />
+                <h3>Jira</h3>
+              </article>
+            </div>
+          </div>
+          <!-- <div class="details-container">
+                    <h2 class="skills-sub-title">Software Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="*" class="icon"/>
+                            <h3>GitHub Desktop</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="*" class="icon"/>
+                            <h3>Docker Desktop</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="*" class="icon"/>
+                            <h3>Microsoft Office</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="*" class="icon"/>
+                            <h3>OverLeaf</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="*" class="icon"/>
+                            <h3>MongoDB Compass</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="*" class="icon"/>
+                            <h3>Postman</h3>
+                        </article>
+                    </div>
+                </div> -->
+        </div>
+      </div>
+      <!-- <img
+        src="./assets//arrow.png"
+        alt="Sroll Down"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="project-containers">
+          <div class="project-details-container color-container">
+            <!-- <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                </div> -->
+            <div>
+              <h2 class="skills-sub-title project-title">
+                Machine Learning MTech Final Project
+              </h2>
+              <p class="project__text">
+                This project analyzes medical insurance expenses using various personal and lifestyle factors, including Age, Sex, 
+                BMI (Body Mass Index), Number of Children, Smoking Status, Geographic Region, and Charges (medical or insurance costs). 
+                The goal was to predict how much a new individual might pay for medical insurance based on these features. I focused on answering two key questions: 
+                Which factors have the greatest impact on medical expenses? And how accurately can we predict those expenses using the available data?
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/annasroka10/ML-final-project'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <!-- <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
+                </div> -->
+            <div>
+              <h2 class="skills-sub-title project-title">Capstone Project</h2>
+              <p class="project-text">
+                This is my final project for the MTech Data Analytics certification, 
+                where I analyzed E-Commerce transaction data to determine whether failed transactions represent high enough value to 
+                significantly impact the business.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/annasroka10/Capstone-project'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <!-- <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                </div> -->
+            <div>
+              <h2 class="skills-sub-title project-title">
+                More to come!
+              </h2>
+              <p class="project__text">
+              </p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+          
+      <!-- <img
+        src="./assets//arrow.png"
+        alt="Sroll Down"
+        class="icon arrow"
+        onclick="location.href='./#internships'"
+      /> -->
+    </section>
+    <section id="internships">
+      <p class="section__text__p1">Know about my</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="horizontal-line">
+        <div class="vertical-line">
+          <img class="image-top" src="./assets//data-analyst.png" alt="" />
+          <div class="vertical-title">
+            <p>Senior AR Staff Accountant</p>
+            <p>Adobe (01/2023 - Present)</p>
+          </div>
+          <p class="vertical-desc">
+            ● Automated repetitive tasks within accounts receivable, leveraging Excel
+            (VLOOKUs, pivot tables, macros) and SAP to
+            enhance efficiency and reduce manual errors.<br>
+            ● Building and developing dynamic dashboards in Jira, Power BI, and Tableau to
+            visualize key insights of the Ecomerce data.<br>
+            ● Analyzing thousands of Ecommerce transactions across over 30 different
+            currencies, with multiple payment processors such as Braintree, Paypal,
+            WorldPay, and Amex. With a 99% success rate, I investigate the 0.1% of issues
+            from the millions processed on a weekly basis – this still totals approximately
+            seven thousand transactions per week.<br>
+            ● Supporting mergers & acquisitions (M&A) initiatives, integrating financial
+            processes, and aligning AR operations with new business entities.<br>
+            ● Posting incoming customer payments across multiple currencies and payment
+            methods, processing customer account adjustments, and issuing customer refunds
+            and adjustments (write-offs, offsets).<br>
+          </p>
+        </div>
+        <div class="vertical-line">
+          <img class="image-top" src="./assets//campus-ambassador.png" alt="" />
+          <div class="vertical-title">
+            <p>Accountant</p>
+            <p>Total Client Connect (02/2022 - 12/2022)</p>
+          </div>
+          <div class="vertical-desc">
+            ●	Created insightful reports to identify business trends and provide valuable decision-making support for business owners.<br>
+            ●	Streamlined month-end reconciliation processes, automating journal entry preparation and variance analysis to improve efficiency and accuracy.<br>
+            ●	Implemented process improvements in payroll and general ledger management, ensuring compliance and reducing errors.<br>
+            ●	Analyzed business operations, trends, costs, revenues, financial commitments, and obligations to project future revenues and expenses and provide advice.<br>
+            ●	Performed month-end ledger account reconciliations; investigated and resolved variances in ledger accounts.<br>
+            ●	Collaborated with IT developers to design and optimize SQL scripts, enhancing payroll process efficiency. <br>
+            ●	Prepared weekly payroll and posted journals to the general ledger.<br>
+          </div>
+        </div>
+        <div class="vertical-line">
+          <img class="image-top" src="./assets//committee-head.png" alt="" />
+          <div class="vertical-title">
+            <p>Monzo Bank</p>
+            <p>Accounts Assistant (02/2021 - 08/2021)</p>
+          </div>
+          <div class="vertical-desc">
+            ●	Designed custom Excel macros for month-end reconciliations, improving efficiency and reducing discrepancies in general ledger accounts.<br>
+            ●	Automated supplier invoice reconciliation using SQL and BigQuery to streamline data extraction and reduce discrepancies.<br>
+            ●	Prepared month-end journals (accruals, prepayments, tax) for senior management’s approval.<br>
+            ●	Prepared weekly bank reconciliations for multiple bank accounts.<br>
+            ●	Prepared weekly payment runs for vendors in USD, GBP & EUR, ensuring invoices were approved according to policy and suppliers were paid on time.<br>
+            ●	Implemented processes to ensure efficiency of the department – I became the NetSuite “guru” and made sure we were taking advantage of all its features.<br>
+            ●	Bank postings using scripts.<br>
+            </div>
+        </div>
+        <div class="vertical-line">
+          <img class="image-top" src="./assets//campus-ambassador.png" alt="" />
+          <div class="vertical-title">
+            <p>New Adventure Travel</p>
+            <p>Accountant (05/2017 - 02/2021)</p>
+          </div>
+          <div class="vertical-desc">
+            ●	Implemented automated depreciation calculations for fixed asset accounting, improving accuracy and reducing manual effort. <br>
+            ●	Produced monthly management accounts, managed general ledger accounts, and enhanced business efficiency through process improvements. <br>
+            ●	Supported the Finance Director with cash flow forecasting and budgeting while handling financial reporting, reconciliations, and payroll support.<br>
+          </div>
+        </div>
+        <div class="vertical-line">
+          <img class="image-top" src="./assets//iot.png" alt="" />
+          <div class="vertical-title">
+            <p>Celsa Manufacturing</p>
+            <p>Senior Purchase Ledger Clerk (02/2015 - 06/2016)</p>
+          </div>
+          <div class="vertical-desc">
+            ● Implemented a purchase ledger automation tool, streamlining supplier payments and intercompany transactions while saving processing time. <br>
+            ● Improved supplier reconciliation, resolved purchase inquiries, and introduced an intercompany invoicing process that saved two hours per week.
+.
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets//arrow.png"
+        alt="Sroll Down"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/mobile.png"
+            alt="Mobile"
+            class="icon contact-icon"
+          />
+          <p><a>(801) 822-9853</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email" class="icon contact-icon" />
+          <p>
+            <a href="mailto:annasroka10@gmail.com"
+              >mailto:annasroka10@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/anna-sroka-38425a38/"
+              >linkedin.com/in/anna-sroka-38425a38/</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      
+      <p>Creating and Implementing - Anna Sroka ❤️</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "a Computer Science Grad",
+          "a Machine Learning Enthusiast",
+          "a Data Analyst",
+          "a LLMs and GenAI lover",
+        ],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
